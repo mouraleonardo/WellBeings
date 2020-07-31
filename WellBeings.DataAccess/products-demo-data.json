@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": "0",
+      "name": "Simply fruit® seedless black raspberry spreadable fruit",
+      "price": 7.49,
+      "description": "Though black raspberries are smaller than blackberries, they pack a crisp tartness.",
+      "image": "simply-fruit-black-raspberry-seedless.png"
+    },
+    {
+      "id": "1",
+      "name": "Fruit & Chia™ Pears in Blackberry Flavored Chia",
+      "price": 10.49,
+      "description": "Pieces of crisp, sweet pears combine with delicately tart blackberry flavored chia seeds for a sophisticated and satisfying anytime snack.",
+      "image": "berries.png"
+    },
+    {
+      "id": "2",
+      "name": "SuperFruit® Pear Chunks in Acai & Blackberry Juice Blend",
+      "price": 6.49,
+      "description": "A ready-to-enjoy mix of bite-sized pear chunks in an antioxidant-rich blend of acaí and blackberry juice.",
+      "image": "superfruit-pearchunksinacaiblackberry.png"
+    },
+    {
+      "id": "3",
+      "name": "Cran•blackberry™ cranberry blackberry juice drink",
+      "price": 8.49,
+      "description": "Cran•Blackberry™ juice drink combines two of nature’s superfruits for a one-two punch of powerful flavor from juicy...",
+      "image": "Cran-Blackberry-Cranberry-Blackberry-Juice-Drink.png"
+    },
+    {
+      "id": "4",
+      "name": "Natural blackberry fruit spread",
+      "price": 8.85,
+      "description": "The bright, tangy complexity of Smucker’s® Natural Blackberry Fruit Spread brings the flavor of plump orchard-picked berries to your table.",
+      "image": "natural-blackberry.png"
+    },
+    {
+      "id": "5",
+      "name": "Seedless Blackberry",
+      "price": 12.89,
+      "description": "Get ready to experience a full berry sensation when you taste Polaner® Seedless Blackberry All Fruit.",
+      "image": "Seedless Blackberry.png"
+    }
+  ]
+}

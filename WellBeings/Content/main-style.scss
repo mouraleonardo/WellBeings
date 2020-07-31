@@ -1,0 +1,295 @@
+﻿// Google Fonts
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,700;1,300;1,400&display=swap);
+// Extra small screen / phone
+$screen-xs: 480px !default;
+$screen-xs-min: $screen-xs !default;
+$screen-phone: $screen-xs-min !default;
+
+// Small screen / tablet
+$screen-sm: 768px !default;
+$screen-sm-min: $screen-sm !default;
+$screen-tablet: $screen-sm-min !default;
+
+// Medium screen / desktop
+$screen-md: 992px !default;
+$screen-md-min: $screen-md !default;
+$screen-desktop: $screen-md-min !default;
+
+// Large screen / wide desktop
+$screen-lg: 1200px !default;
+$screen-lg-min: $screen-lg !default;
+$screen-lg-desktop: $screen-lg-min !default;
+
+//default variables
+
+$main-color: #0A215A;
+$main-text-color: #FFFFFF;
+$main-font-family: 'Open Sans', sans-serif;
+
+
+body {
+    font-family: $main-font-family;
+    color: $main-text-color;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background: url(/imgs/background.png) no-repeat center center fixed;
+    background-color: #0A215A;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.body-content {
+    padding-left: 20px;
+    padding-right: 15px;
+
+    @media screen and (max-width: $screen-sm - 1) {
+        padding-left: 0;
+    }
+}
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+.clearfix {
+    clear: both;
+}
+/*CSS CONTENT*/
+.main-content {
+    min-height: 300px;
+}
+
+.logo {
+    position: absolute;
+
+    @media screen and (max-width: $screen-sm - 1) {
+        padding-left: 20px;
+    }
+}
+
+.topnav-right {
+    margin-top: 20px;
+    font-weight: 700;
+
+    @media screen and (min-width: $screen-sm) {
+        float: right;
+        text-transform: uppercase;
+    }
+
+    @media (max-width: $screen-sm - 1) {
+        text-transform: uppercase;
+        background-color: rgba(10, 33, 90, 0.8)
+    }
+}
+
+.navbar-nav > li > a {
+    @media screen and (max-width: $screen-sm - 1) {
+        padding-left: 20px;
+    }
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    @media screen and (max-width: $screen-sm - 1) {
+        border-bottom: 0px;
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+}
+
+.main-title {
+    font-family: $main-font-family;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 5vw;
+    margin-top: 80px;
+
+    @media screen and (max-width: $screen-sm - 1) {
+        padding-left: 20px;
+        font-size: 8vw;
+    }
+}
+
+.main-box {
+    color: $main-text-color;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    margin-top: 100px;
+
+    .box-title {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .box-text {
+        font-size: 15px;
+        line-height: 190%;
+    }
+}
+
+.contents {
+    margin-top: 60px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    .title {
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #0A215A;
+    color: white;
+    text-align: center;
+}
+/*CSS PRODUCTS*/
+.products {
+    margin-top: 60px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    .title {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+
+
+    .products-list {
+        height: 340px;
+        background-color: rgba(255, 255, 255, 0.1);
+        margin:10px;
+        padding:20px;
+        border-radius:5px;
+    }
+
+    .product-img {
+        height: 140px;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .product-description {
+        text-align: center;
+        font-weight: 300;
+        line-height: 180%;
+        margin-top: 20px;
+    }
+
+    .product-price {
+        margin-top: 20px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+    }
+}
+/*CSS CONTACT*/
+.image-contact {
+    width: 100%;
+    margin-top: 28px;
+}
+
+.icon-letter {
+    max-width: 150px;
+    max-height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+}
+
+.description-contact {
+    margin-top: 20px;
+
+    .subtitle {
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 15px 30px;
+    }
+
+    address {
+        padding-left: 55px;
+    }
+
+    address a {
+        color: #fff;
+    }
+}
+
+.contact-form {
+    textarea {
+        resize: none;
+    }
+
+    .form-label {
+        display: none;
+    }
+
+    .form-control {
+        border-radius: 0;
+        border-color: #ccc;
+        border-width: 0 0 2px 0;
+        border-style: none none solid none;
+        box-shadow: none;
+        background-color: transparent;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 30px;
+    }
+
+    .form-control:focus {
+        box-shadow: none;
+        border-color: #5e9bfc;
+    }
+
+    .js-hide-label {
+        opacity: 0;
+    }
+
+    .js-unhighlight-label {
+        color: #999
+    }
+
+    ::placeholder {
+        color: #fff;
+        opacity: 1;
+    }
+
+    :-ms-input-placeholder {
+        color: #fff;
+    }
+
+    ::-ms-input-placeholder {
+        color: #fff;
+    }
+
+    .btn-start-order {
+        background: 0 0 #0A215A;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        color: #ffffff;
+        font-size: 16px;
+        line-height: inherit;
+        margin: 30px 0;
+        padding: 10px 30px;
+        transition: all 0.25s ease 0s;
+    }
+
+    .btn-start-order:hover, .btn-start-order:active, .btn-start-order:focus {
+        border-color: #0A215A;
+        background: #ffffff;
+        color: #0A215A;
+    }
+}
