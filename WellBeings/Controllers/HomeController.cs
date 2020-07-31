@@ -11,9 +11,12 @@ namespace WellBeings.Controllers
     {
         private readonly ProductsDataAccess _productsDataAccess;
 
+        private readonly RetailersDataAccess _retailersDataAccess;
+
         public HomeController()
         {
             _productsDataAccess = new ProductsDataAccess();
+            _retailersDataAccess = new RetailersDataAccess();
         }
 
         public ActionResult Index()
@@ -23,7 +26,7 @@ namespace WellBeings.Controllers
 
         public ActionResult Products()
         {
-            ViewBag.Message = "Products page.";
+            ViewBag.Message = "Products page";
             ViewBag.Products = _productsDataAccess.GetProducts();
 
             return View();
@@ -31,8 +34,8 @@ namespace WellBeings.Controllers
 
         public ActionResult Retailers()
         {
-            ViewBag.Message = "Retailers page.";
-
+            ViewBag.Message = "Retailers page";
+            ViewBag.Retailers = _retailersDataAccess.GetRetailers();
             return View();
         }
         public ActionResult Contact()

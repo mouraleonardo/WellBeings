@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="retailers-demo-data.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="retailers-demo-data.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="products-demo-data.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

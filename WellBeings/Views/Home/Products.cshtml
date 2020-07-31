@@ -2,11 +2,11 @@
     ViewBag.Title = "Products";
 }
     <div class="row products">
-        <h2 class="title">@ViewBag.Title.</h2>
+        <h2 class="title">@ViewBag.Title</h2>
         @foreach (var product in ViewBag.Products)
         {
             <div class="col-md-4">
-                <div class="products-list">
+                <div class="product-item">
                     <div class="product-name">
                         <strong>@product.name</strong>
                     </div>

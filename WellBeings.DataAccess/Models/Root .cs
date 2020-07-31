@@ -8,5 +8,6 @@ namespace WellBeings.DataAccess.Models
     public class Root
     {
         public List<Product> Products { get; set; }
+        public List<Retailer> Retailers { get; set; }
     }
 }

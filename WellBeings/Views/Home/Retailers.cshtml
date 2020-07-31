@@ -1,7 +1,25 @@
 ﻿@{
     ViewBag.Title = "Retailers";
 }
-<div class="row contents">
-    <h2>@ViewBag.Title.</h2>
-    <h3>@ViewBag.Message</h3>
+<div class="row retailers">
+    <h2 class="title">@ViewBag.Title</h2>
+    @foreach (var retailer in ViewBag.Retailers)
+    {
+        <div class="col-md-4">
+            <div class="retailer-item">
+                <address>
+                    <div class="retailer-name">
+                        @retailer.name
+                    </div>
+                    <div class="retailer-address">
+                        @retailer.address
+                    </div>
+                    <div class="retailer-phone">
+                        <abbr title="Phone">P:</abbr>
+                        @retailer.phone
+                    </div>
+                </address>
+            </div>
+        </div>
+    }
 </div>

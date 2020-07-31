@@ -105,7 +105,7 @@ footer {
   .products .title {
     font-size: 30px;
     font-weight: bold; }
-  .products .products-list {
+  .products .product-item {
     height: 340px;
     background-color: rgba(255, 255, 255, 0.1);
     margin: 10px;
@@ -122,7 +122,8 @@ footer {
     text-align: center;
     font-weight: 600;
     font-size: 14px;
-    min-height: 40px; }
+    min-height: 40px;
+    text-shadow: 2px 2px 4px #000000; }
   .products .product-description {
     text-align: center;
     font-weight: 300;
@@ -138,7 +139,46 @@ footer {
     margin-top: 20px;
     text-align: center;
     font-weight: bold;
-    font-size: 24px; }
+    font-size: 24px;
+    text-shadow: 2px 2px 4px #000000; }
+
+/*CSS RETAILERS*/
+.retailers {
+  margin-top: 60px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3); }
+  .retailers .title {
+    font-size: 30px;
+    font-weight: bold; }
+  .retailers .retailer-item {
+    height: 180px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px; }
+  .retailers .retailer-name {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    min-height: 40px;
+    text-shadow: 2px 2px 4px #000000; }
+  .retailers .retailer-address {
+    text-align: center;
+    font-weight: 300;
+    line-height: 180%;
+    margin-top: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    -webkit-box-orient: vertical; }
+  .retailers .retailer-phone {
+    margin-top: 16px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: 2px 2px 4px #000000; }
 
 /*CSS CONTACT*/
 .image-contact {
