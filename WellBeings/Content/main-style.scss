@@ -165,13 +165,15 @@ footer {
     .products-list {
         height: 340px;
         background-color: rgba(255, 255, 255, 0.1);
-        margin:10px;
-        padding:20px;
-        border-radius:5px;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 5px;
     }
 
     .product-img {
         height: 140px;
+        margin-top: 10px;
+
         img {
             height: 100%;
             width: 100%;
@@ -179,11 +181,23 @@ footer {
         }
     }
 
+    .product-name {
+        text-align: center;
+        font-weight: 600;
+        font-size: 14px;
+        min-height:40px;
+    }
+
     .product-description {
         text-align: center;
         font-weight: 300;
         line-height: 180%;
         margin-top: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* number of lines to show */
+        -webkit-box-orient: vertical;
     }
 
     .product-price {
@@ -292,4 +306,8 @@ footer {
         background: #ffffff;
         color: #0A215A;
     }
+}
+
+#map {
+    height: 100%;
 }

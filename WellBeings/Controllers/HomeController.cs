@@ -35,35 +35,11 @@ namespace WellBeings.Controllers
 
             return View();
         }
-        //public ActionResult Contact()
-        //{
-        //    ViewBag.Message = "Our team will be happy to answer store and product-related questions.";
+        public ActionResult Contact()
+        {
+            ViewBag.Message = "Our team will be happy to answer store and product-related questions.";
 
-        //    if (!Page.IsPostBack)
-        //    {
-        //        HttpCookie c = Request.Cookies["test"];
-        //        if (c != null)
-        //        {
-        //            Response.Write(String.Format("test value is {0} <br />", c.Value));
-        //        }
-        //    }
-        //    else
-        //    {
-        //        HttpCookie c = new HttpCookie("test");
-        //        c.Value = "HERE IT IS";
-        //        Response.Cookies.Add(c);
-        //    }
-
-        //    return View();
-        //}
-
-        //[HttpPost]
-        //public ActionResult SubmitAction(string model)
-        //{
-        //    var value1 = model.SimpleProp1;
-        //    var value2 = model.SimpleProp2;
-        //    var value3 = model.ComplexProp1.SimpleProp1;
-        //    return something...
-        //}
+            return View();
+        }
     }
 }
